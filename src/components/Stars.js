@@ -15,11 +15,17 @@ const Stars = () => {
     setStarPositions(initialStars);
 
     const starInterval = setInterval(() => {
+      // Create a new star position
       const newStarPosition = createStar();
-      setStarPositions(prevPositions => [...prevPositions, newStarPosition]);
+      
+      // Check if the length of starPositions is greater than 99
       if (starPositions.length > 99) {
+        // Remove the oldest position by slicing the array
         setStarPositions(prevPositions => prevPositions.slice(1));
       }
+      
+      // Add the new star position
+      setStarPositions(prevPositions => [...prevPositions, newStarPosition]);
     }, 3000);
 
     return () => clearInterval(starInterval);
@@ -37,6 +43,5 @@ const Stars = () => {
     </div>
   );
 }
-
 
 export default Stars;

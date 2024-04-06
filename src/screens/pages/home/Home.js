@@ -3,6 +3,7 @@ import Header from "../../../layouts/Header";
 import Footer from "../../../layouts/Footer";
 import HomeBanner from "../HomeBanner";
 import BankSlider from "../BankSlider";
+import Testimonials from "../testimonials/Testimonials"; // Import Testimonials component
 import About from "../about/About";
 import DownloadSection from "../DownloadSection";
 import Contact from "../contact/Contact";
@@ -140,20 +141,29 @@ export default function Home() {
       <section style={{ background: '#040404' }}>
         <BankSlider />
       </section>
-
+      <section style={{ background: '#040404' }}>
+        <Testimonials /> {/* Include Testimonials component */}
+      </section>
       <section style={{ background: '#040404' }}>
         <About />
       </section>
-      <section style={{ background: '#040404' }}>
+      {/* <section style={{ background: '#040404' }}>
         <DownloadSection />
-      </section>
+      </section> */}
 
-      <section style={{ background: '#040404' }}>
+      <section style={{ background: '#040404' }} id="services" >
+      <h2
+                className="section-title"
+                data-aos="fade-up"
+                data-aos-delay="200"
+                style={{ color: "#ffffff" }} // Set text color to white
+              >
+                Services
+              </h2>
         <div style={{ paddingTop: 40, marginTop: 40 }}>
           <Tabs submitDate={submitDate} />
         </div>
       </section>
-
       <section style={{ background: '#040404' }}>
         <div style={{ paddingTop: 40, marginTop: 40 }}>
           <div className="container">

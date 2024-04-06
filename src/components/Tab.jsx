@@ -41,7 +41,7 @@ const Tabs = () => {
     {
       id: 1,
       tabTitle: "Zodiac Sign",
-      title: "Zodiac Sign",
+      title: "Select Birth Date",
       content: <ZodiacSign />,
     },
     {
@@ -279,7 +279,7 @@ const Tabs = () => {
   };
 
   return (
-    <div className="container" id='services'>
+    <div className="container">
       <div className="row">
         <div className="col-md-12">
           <div className="tabs">
@@ -307,12 +307,12 @@ const Tabs = () => {
           />
         </div>
         <div className="col-md-6 text-center">
-          <div className="content" style={{padding: '10px'}}>
+          <div className="content" style={{padding: '10px', backgroundColor: 'transparent'}}>
             {tabs.map((tab, i) => (
               <div key={i}>
                 {currentTab === `${tab.id}` && (
                   <div>
-                    <p className="title">{tab.title}</p>
+                    <p className="title" style={{color: '#ffffff'}}>{tab.title}</p>
                     <p>{tab.content}</p>
                   </div>
                 )}

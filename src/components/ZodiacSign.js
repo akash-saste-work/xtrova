@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Formik } from "formik";
+import "./ZodiacSign.css";
 
 function ZodiacSign() {
   const [initialValues, setInitialValues] = useState({
@@ -92,10 +93,10 @@ function ZodiacSign() {
               )}
             </div>
             <div className="col-12">
-              <button type="submit" className="btn btn-primary mr-2" disabled={isSubmitting}>
+              <button type="submit" className="btn btn-primary mr-2" style={{margin:'5px'}} disabled={isSubmitting}>
                 {isSubmitting ? "Submitting..." : "Submit"}
               </button>
-              <button type="button" className="btn btn-secondary" onClick={handleReset}>
+              <button type="button" className="btn btn-secondary" style={{margin:'5px'}} onClick={handleReset}>
                 Reset
               </button>
             </div>
@@ -103,12 +104,12 @@ function ZodiacSign() {
         )}
       </Formik>
       {zodiacSign && (
-        <div className="row">
-          <div className="col-12 mt-3">
-            <h3>Zodiac Sign: {zodiacSign.name}</h3>
-            <img src={zodiacSign.image} alt={zodiacSign.name} width={'100%'} />
-          </div>
+        <div className="row zodiac-container">
+        <div className="col-12 mt-3">
+          <h3 className="zodiac-title">Zodiac Sign: {zodiacSign.name}</h3>
+          <img src={zodiacSign.image} alt={zodiacSign.name} className="zodiac-image" />
         </div>
+      </div>
       )}
     </>
   );

@@ -1,6 +1,7 @@
 import React from 'react'
 import { links } from './Data'
 import { Link } from "react-router-dom";
+import './header.css';
 
 const handleClick = (e) => {
   e.preventDefault()
@@ -19,12 +20,16 @@ export default function Header() {
       <header>
         <section>
           <div className="naviagtion naviagtion-white fixed-top transition">
-            <div className="container">
+            <div style={{
+              background: 'linear-gradient(to top, rgba(252, 213, 166, 0.8), rgba(240, 117, 110, 0.8))',
+              color: "#ffffff",
+              width: '100%',
+              padding: '5px 25px'
+            }}>
               <nav className="navbar navbar-expand-lg navbar-light p-0">
-                <a className="navbar-brand p-0" href="#">
-                  {/* <img src="assets/images/logo/1.png" alt="Logo" width="163px" /> */}
-                  Xtrova
-                </a>
+              <div className='xtrova-text'>
+                Xtrova
+              </div>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
                   aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
                   <span className="navbar-toggler-icon"></span>
