@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = ({ style }) => {
   const footerStyle = {
-    background: 'linear-gradient(to top, rgba(252, 213, 166, 0.8), rgba(240, 117, 110, 0.8))',
+    background: '#8b8e93',
     color: "#ffffff", // Whitest color for text
     padding: "1.5rem 0 1rem", // Padding with reduced bottom padding
   };

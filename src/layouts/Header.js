@@ -21,8 +21,8 @@ export default function Header() {
         <section>
           <div className="naviagtion naviagtion-white fixed-top transition">
             <div style={{
-              background: 'linear-gradient(to top, rgba(252, 213, 166, 0.8), rgba(240, 117, 110, 0.8))',
-              color: "#ffffff",
+              background: '#8b8e93',
+              color: "#000",
               width: '100%',
               padding: '5px 25px'
             }}>

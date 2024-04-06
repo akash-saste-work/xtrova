@@ -1,6 +1,7 @@
 import React from "react";
 import rotatingEarth from './../../assets/video/rotating-earth.mp4';
 import Stars from "../../components/Stars";
+import './home-baner.css';
 
 function HomeBanner() {
   return (
@@ -20,15 +21,15 @@ function HomeBanner() {
                   </p>
                 </div>
               </div>
-              <div className="col-lg-6 banner-img d-flex justify-content-center align-items-center">
+              <div className="col-lg-6 banner-img d-flex justify-content-center align-items-center video-container">
+                <div className="glass"></div>
                 <video
-                  style={{ width: "100%", maxHeight: "350px", objectFit: "cover", borderRadius: "15px", boxShadow: "0px 0px 20px rgba(0, 0, 0, 0.5)", margin: "0 auto" }}
                   autoPlay
                   loop
                   muted
                   playsInline
                   src={rotatingEarth}
-                  className="img-fluid rounded-lg"
+                  className="img-fluid rounded-lg earth-video"
                   data-aos="fade-left"
                   data-aos-delay="1000"
                 />

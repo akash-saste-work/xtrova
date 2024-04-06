@@ -32,8 +32,8 @@ export default function Contact() {
                   <h4 className="mt-4 mb-3" style={{ color: "#ffffff" }}>Email</h4> {/* Set text color to white */}
                   <p style={{ color: "#f0f0f0" }}> {/* Set text color to lighter shade */}
                     {" "}
-                    <a href="mailto:support@finedict.com" style={{ color: "#f0f0f0" }}> {/* Set link color to lighter shade */}
-                      support@finedict.com
+                    <a href="mailto:support@xtrova.com" style={{ color: "#f0f0f0" }}> {/* Set link color to lighter shade */}
+                      support@xtrova.com
                     </a>
                     <br />
                   </p>

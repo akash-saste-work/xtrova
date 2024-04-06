@@ -141,6 +141,19 @@ export default function Home() {
       <section style={{ background: '#040404' }}>
         <BankSlider />
       </section>
+      <section style={{ background: '#040404' }} id="services" >
+        <h2
+          className="section-title"
+          data-aos="fade-up"
+          data-aos-delay="200"
+          style={{ color: "#ffffff" }} // Set text color to white
+        >
+          Services
+        </h2>
+        <div style={{ paddingTop: 40, marginTop: 40 }}>
+          <Tabs submitDate={submitDate} />
+        </div>
+      </section>
       <section style={{ background: '#040404' }}>
         <Testimonials /> {/* Include Testimonials component */}
       </section>
@@ -151,19 +164,6 @@ export default function Home() {
         <DownloadSection />
       </section> */}
 
-      <section style={{ background: '#040404' }} id="services" >
-      <h2
-                className="section-title"
-                data-aos="fade-up"
-                data-aos-delay="200"
-                style={{ color: "#ffffff" }} // Set text color to white
-              >
-                Services
-              </h2>
-        <div style={{ paddingTop: 40, marginTop: 40 }}>
-          <Tabs submitDate={submitDate} />
-        </div>
-      </section>
       <section style={{ background: '#040404' }}>
         <div style={{ paddingTop: 40, marginTop: 40 }}>
           <div className="container">

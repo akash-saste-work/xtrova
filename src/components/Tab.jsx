@@ -6,6 +6,7 @@ import PersonalLoan from "./PersonalLoan";
 import SecuredBusinessLoan from "./SecuredBusinessLoan";
 import ProfessionalLoan from "./ProfessionalLoan";
 import SecuredOverdraftLoan from "./SecuredOverdraftLoan";
+import './tab.css';
 
 const Tabs = () => {
   const [currentTab, setCurrentTab] = useState("1");
@@ -301,7 +302,7 @@ const Tabs = () => {
         <div className="col-md-6 pr-lg-5">
           <img
             src="assets/images/about/form.png"
-            className="img-fluid horscope-wheel"
+            className="img-fluid horscope-wheel rotating-image"
             alt="dashboard"
             data-aos="fade-right"
           />
