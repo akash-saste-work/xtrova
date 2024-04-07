@@ -25,3 +25,22 @@
 a.nav-link.text-capitalize.nav-link\.active {
     color: #7952f5 !important;
 }
+
+.navigation {
+    padding: 0 !important;
+}
+
+@media (max-width: 1440px){
+.naviagtion {
+    padding: 0 !important;
+}
+}
+
+.naviagtion.naviagtion-white.fixed-top.transition.nav-bg {
+    padding: 0 !important;
+}
+
+.navbar-light .navbar-toggler {
+    background: white;
+    border-color: white;
+}

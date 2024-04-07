@@ -15,31 +15,31 @@ function ZodiacSign() {
     const day = date.getDate();
 
     if ((month === 1 && day >= 20) || (month === 2 && day <= 18)) {
-      return { name: "Aquarius", image: require("./../assets/img/bank/z9.jpg") };
+      return { name: "Aquarius", video: require("./../assets/video/aquarius.mp4") };
     } else if ((month === 2 && day >= 19) || (month === 3 && day <= 20)) {
-      return { name: "Pisces", image: require("./../assets/img/bank/z10.jpg") };
+      return { name: "Pisces", video: require("./../assets/video/pisces.mp4") };
     } else if ((month === 3 && day >= 21) || (month === 4 && day <= 19)) {
-      return { name: "Aries", image: require("./../assets/img/bank/z1.jpg") };
+      return { name: "Aries", video: require("./../assets/video/aries.mp4") };
     } else if ((month === 4 && day >= 20) || (month === 5 && day <= 20)) {
-      return { name: "Taurus", image: require("./../assets/img/bank/z2.jpg") };
+      return { name: "Taurus", video: require("./../assets/video/tauras.mp4") };
     } else if ((month === 5 && day >= 21) || (month === 6 && day <= 20)) {
-      return { name: "Gemini", image: require("./../assets/img/bank/z3.jpg") };
+      return { name: "Gemini", video: require("./../assets/video/gemini.mp4") };
     } else if ((month === 6 && day >= 21) || (month === 7 && day <= 22)) {
-      return { name: "Cancer", image: require("./../assets/img/bank/z4.jpg") };
+      return { name: "Cancer", video: require("./../assets/video/cancer.mp4") };
     } else if ((month === 7 && day >= 23) || (month === 8 && day <= 22)) {
-      return { name: "Leo", image: require("./../assets/img/bank/z11.jpg") };
+      return { name: "Leo", video: require("./../assets/video/leo.mp4") };
     } else if ((month === 8 && day >= 23) || (month === 9 && day <= 22)) {
-      return { name: "Virgo", image: require("./../assets/img/bank/z5.jpg") };
+      return { name: "Virgo", video: require("./../assets/video/virgo.mp4") };
     } else if ((month === 9 && day >= 23) || (month === 10 && day <= 22)) {
-      return { name: "Libra", image: require("./../assets/img/bank/z6.jpg") };
+      return { name: "Libra", video: require("./../assets/video/libra.mp4") };
     } else if ((month === 10 && day >= 23) || (month === 11 && day <= 21)) {
-      return { name: "Scorpio", image: require("./../assets/img/bank/z12.jpg") };
+      return { name: "Scorpio", video: require("./../assets/video/scorpio.mp4") };
     } else if ((month === 11 && day >= 22) || (month === 12 && day <= 21)) {
-      return { name: "Sagittarius", image: require("./../assets/img/bank/z8.jpg") };
+      return { name: "Sagittarius", video: require("./../assets/video/sagittarius.mp4") };
     } else if ((month === 12 && day >= 22) || (month === 1 && day <= 19)) {
-      return { name: "Capricorn", image: require("./../assets/img/bank/z7.jpg") };
+      return { name: "Capricorn", video: require("./../assets/video/capricorn.mp4") };
     } else {
-      return { name: "Unknown", image: require("./../assets/img/bank/z1.jpg") };
+      return { name: "Unknown", video: require("./../assets/img/bank/z1.jpg") };
     }
   };
 
@@ -63,6 +63,7 @@ function ZodiacSign() {
     })
     setZodiacSign(null); 
   };
+  console.log(zodiacSign)
 
   return (
     <>
@@ -107,7 +108,17 @@ function ZodiacSign() {
         <div className="row zodiac-container">
         <div className="col-12 mt-3">
           <h3 className="zodiac-title">Zodiac Sign: {zodiacSign.name}</h3>
-          <img src={zodiacSign.image} alt={zodiacSign.name} className="zodiac-image" />
+          {/* <img src={zodiacSign.image} alt={zodiacSign.name} className="zodiac-image" /> */}
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              src={zodiacSign.video}
+              className="img-fluid rounded-lg zodiac-sign-video"
+              data-aos="fade-left"
+              data-aos-delay="1000"
+            />
         </div>
       </div>
       )}

@@ -1,4 +1,6 @@
 import React from "react";
+import galaxy from './../../../assets/img/png/galaxy.png';
+import './about.css';
 
 export default function About() {
   return (
@@ -50,7 +52,7 @@ export default function About() {
             </div>
             <div className="col-md-6 col-lg-5 col-sm-12">
               <img
-                src="assets/images/about/about-final.png"
+                src={galaxy}
                 className="img-fluid img-about"
                 alt="dashboard"
                 data-aos="fade-left"
