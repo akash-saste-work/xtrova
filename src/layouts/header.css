@@ -17,3 +17,11 @@
     text-shadow: 0px 0px 10px #ffffff; /* Enhance text shadow on hover */
     background-color: #333333; /* Change background color on hover */
 }
+
+.navbar .nav-item .nav-link {
+    color: #fff;
+}
+
+a.nav-link.text-capitalize.nav-link\.active {
+    color: #7952f5 !important;
+}

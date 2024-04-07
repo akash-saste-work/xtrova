@@ -21,8 +21,8 @@ export default function Header() {
         <section>
           <div className="naviagtion naviagtion-white fixed-top transition">
             <div style={{
-              background: '#8b8e93',
-              color: "#000",
+              background: 'rgb(2, 31, 67)',
+              color: "#fff",
               width: '100%',
               padding: '5px 25px'
             }}>
@@ -42,7 +42,7 @@ export default function Header() {
                     {links.map((link) => {
                       return (
                         <li className="nav-item" key={link.id}>
-                          <a className="nav-link text-dark text-capitalize" href={link.url} onClick={handleClick}>
+                          <a className="nav-link text-capitalize" data-name={link.url} href={link.url} onClick={handleClick}>
                             {link.text}
                           </a>
                         </li>

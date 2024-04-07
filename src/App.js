@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import {
   HashRouter,
   Routes,
@@ -18,6 +18,33 @@ import Stars from '../src/components/Stars.js';
 
 
 function App() {
+
+  const checkDivDataOnScroll = () =>{
+    const section = document.querySelectorAll('section');
+    for(let i=0; i<section.length; i++){
+      const rect = section[i].getBoundingClientRect();
+      if (rect.top >= 0 && rect.top < window.innerHeight/4 ) {
+        if(section[i].id){
+          const navLinks = document.getElementsByClassName('nav-link')
+          for(let j=0; j<navLinks.length; j++){
+            const name = navLinks[j].getAttribute('data-name');
+            if(name === `#${section[i].id}`){
+              navLinks[j].classList.add('nav-link.active')
+            }else{
+              navLinks[j].classList.remove('nav-link.active')
+              navLinks[j].style.color = '#fff'
+            }
+          }
+        }
+        break;
+      }
+    }
+  }
+
+  useEffect(() =>{
+    window.addEventListener('scroll', checkDivDataOnScroll);
+  }, [])
+
   return (
     <HashRouter>
       <div className="starry-night">

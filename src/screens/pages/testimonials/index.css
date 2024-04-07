@@ -25,6 +25,21 @@
     -webkit-overflow-scrolling: touch;
     padding-bottom: 10px; /* Add some bottom padding to prevent horizontal scroll from being hidden behind scrollbar */
   }
+
+  /* Hide scrollbar for WebKit/Blink */
+.testimonials-content::-webkit-scrollbar {
+  width: 0;
+}
+
+/* Define scrollbar track */
+.testimonials-content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Define scrollbar thumb */
+.testimonials-content::-webkit-scrollbar-thumb {
+  background: transparent;
+}
   
   .testimonial-card {
     flex: 0 0 calc(33.33% - 20px);
@@ -33,6 +48,7 @@
     background: rgba(0, 0, 0, 0.5);
     padding: 20px;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    min-width: 250px;
   }
   
   .testimonial-content {

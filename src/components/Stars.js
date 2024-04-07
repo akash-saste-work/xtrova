@@ -19,7 +19,7 @@ const Stars = () => {
       const newStarPosition = createStar();
       
       // Check if the length of starPositions is greater than 99
-      if (starPositions.length > 99) {
+      if (starPositions.length > 50) {
         // Remove the oldest position by slicing the array
         setStarPositions(prevPositions => prevPositions.slice(1));
       }

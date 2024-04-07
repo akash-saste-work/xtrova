@@ -135,10 +135,10 @@ export default function Home() {
     <>
       <Header />
       <ToastContainer />
-      <section style={{ background: '#040404' }}>
+      <section style={{ background: '#040404' }} id="home">
         <HomeBanner />
       </section>
-      <section style={{ background: '#040404' }}>
+      <section style={{ background: '#040404' }} id="home">
         <BankSlider />
       </section>
       <section style={{ background: '#040404' }} id="services" >
@@ -154,17 +154,17 @@ export default function Home() {
           <Tabs submitDate={submitDate} />
         </div>
       </section>
-      <section style={{ background: '#040404' }}>
+      <section style={{ background: '#040404' }} id="testimonials">
         <Testimonials /> {/* Include Testimonials component */}
       </section>
-      <section style={{ background: '#040404' }}>
+      <section style={{ background: '#040404' }} id="about">
         <About />
       </section>
       {/* <section style={{ background: '#040404' }}>
         <DownloadSection />
       </section> */}
 
-      <section style={{ background: '#040404' }}>
+      <section style={{ background: '#040404' }} id="feedback">
         <div style={{ paddingTop: 40, marginTop: 40 }}>
           <div className="container">
             <div className="row">
@@ -239,8 +239,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-
+      <section style={{ background: '#040404' }} id="contact">
       <Contact />
+      </section>
       <Footer />
     </>
   );

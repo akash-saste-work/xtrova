@@ -33,7 +33,7 @@ code {
   border-radius: 50%;
 
   /* Animation for twinkling effect */
-  animation: twinkling 2s infinite alternate;
+  animation: twinkling 3s infinite alternate;
 }
 
 /* Animation keyframes for twinkling effect */

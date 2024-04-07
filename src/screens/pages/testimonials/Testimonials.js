@@ -79,7 +79,6 @@ const Testimonials = () => {
         <section
             className="testimonials"
             style={{ background: 'url("/path/to/galaxy-background.jpg")' }}
-            id="testimonials"
         >
             <div className="container">
                 <h2 className="section-title" style={{ color: "#fff" }}>

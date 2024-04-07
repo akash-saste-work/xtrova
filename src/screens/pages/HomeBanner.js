@@ -22,7 +22,9 @@ function HomeBanner() {
                 </div>
               </div>
               <div className="col-lg-6 banner-img d-flex justify-content-center align-items-center video-container">
-                <div className="glass"></div>
+                <div className="glass">
+                  <Stars />
+                </div>
                 <video
                   autoPlay
                   loop
