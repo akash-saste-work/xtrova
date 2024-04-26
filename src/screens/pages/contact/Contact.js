@@ -33,7 +33,7 @@ export default function Contact() {
                   <p style={{ color: "#f0f0f0" }}> {/* Set text color to lighter shade */}
                     {" "}
                     <a href="mailto:support@xtrova.com" style={{ color: "#f0f0f0" }}> {/* Set link color to lighter shade */}
-                      support@xtrova.com
+                      vanya.ojha@yahoo.com
                     </a>
                     <br />
                   </p>

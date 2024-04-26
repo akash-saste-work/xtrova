@@ -5,74 +5,40 @@ const Testimonials = () => {
     const testimonials = [
         {
             id: 1,
-            name: "John Doe",
+            name: "Ritu Shaarma",
             image: "/path/to/profile1.jpg",
             testimony:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.",
+                "Vanya's insights into my relationship were illuminating. Her guidance brought clarity and deeper connection to my love life. Grateful for her wisdom!",
         },
         {
             id: 2,
-            name: "Jane Smith",
+            name: "Ankit Jain",
             image: "/path/to/profile2.jpg",
             testimony:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.",
+                "Vanya's astrology advice guided me through academic challenges with confidence. Her understanding of the stars propelled me towards success.",
         },
         {
             id: 3,
-            name: "Alice Johnson",
+            name: "Rajni Patel",
             image: "/path/to/profile3.jpg",
             testimony:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.",
+                "With Vanya's guidance, my business flourished. Her insights into market trends and cosmic influences shaped our strategic decisions.",
         },
         {
             id: 4,
-            name: "Bob Brown",
+            name: "Deepak Shinde",
             image: "/path/to/profile4.jpg",
             testimony:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.",
+                "Vanya's astrological insights empowered me to overcome health challenges. Her holistic approach to wellness transformed my life.",
         },
         {
             id: 5,
-            name: "Emma White",
+            name: "Lakshmi Rajput",
             image: "/path/to/profile5.jpg",
             testimony:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.",
+                "Vanya's expertise helped me banish dark energies and negative forces. With her guidance, I reclaimed peace and positivity in my life.",
         },
-        {
-            id: 6,
-            name: "Michael Smith",
-            image: "/path/to/profile6.jpg",
-            testimony:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.",
-        },
-        {
-            id: 7,
-            name: "Olivia Johnson",
-            image: "/path/to/profile7.jpg",
-            testimony:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.",
-        },
-        {
-            id: 8,
-            name: "William Davis",
-            image: "/path/to/profile8.jpg",
-            testimony:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.",
-        },
-        {
-            id: 9,
-            name: "Sophia Martinez",
-            image: "/path/to/profile9.jpg",
-            testimony:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.",
-        },
-        {
-            id: 10,
-            name: "James Taylor",
-            image: "/path/to/profile10.jpg",
-            testimony:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.",
-        },
+
     ];
 
     return (

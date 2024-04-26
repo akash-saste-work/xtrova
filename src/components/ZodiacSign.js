@@ -41,7 +41,36 @@ function ZodiacSign() {
     } else {
       return { name: "Unknown", video: require("./../assets/img/bank/z1.jpg") };
     }
-  };
+  }
+
+  // if ((month === 1 && day >= 20) || (month === 2 && day <= 18)) {
+  //   return { name: "Aquarius", image: require("./../assets/zodiac/aquarius.PNG") };
+  // } else if ((month === 2 && day >= 19) || (month === 3 && day <= 20)) {
+  //   return { name: "Pisces", image: require("./../assets/zodiac/pisces.PNG") };
+  // } else if ((month === 3 && day >= 21) || (month === 4 && day <= 19)) {
+  //   return { name: "Aries", image: require("./../assets/zodiac/aries.PNG") };
+  // } else if ((month === 4 && day >= 20) || (month === 5 && day <= 20)) {
+  //   return { name: "Taurus", image: require("./../assets/zodiac/tauras.PNG") };
+  // } else if ((month === 5 && day >= 21) || (month === 6 && day <= 20)) {
+  //   return { name: "Gemini", image: require("./../assets/zodiac/gemini.PNG") };
+  // } else if ((month === 6 && day >= 21) || (month === 7 && day <= 22)) {
+  //   return { name: "Cancer", image: require("./../assets/zodiac/cancer.PNG") };
+  // } else if ((month === 7 && day >= 23) || (month === 8 && day <= 22)) {
+  //   return { name: "Leo", image: require("./../assets/zodiac/leo.PNG") };
+  // } else if ((month === 8 && day >= 23) || (month === 9 && day <= 22)) {
+  //   return { name: "Virgo", image: require("./../assets/zodiac/virgo.PNG") };
+  // } else if ((month === 9 && day >= 23) || (month === 10 && day <= 22)) {
+  //   return { name: "Libra", image: require("./../assets/zodiac/libra.PNG") };
+  // } else if ((month === 10 && day >= 23) || (month === 11 && day <= 21)) {
+  //   return { name: "Scorpio", image: require("./../assets/zodiac/scorpio.PNG") };
+  // } else if ((month === 11 && day >= 22) || (month === 12 && day <= 21)) {
+  //   return { name: "Sagittarius", image: require("./../assets/zodiac/sagittarius.PNG") };
+  // } else if ((month === 12 && day >= 22) || (month === 1 && day <= 19)) {
+  //   return { name: "Capricorn", image: require("./../assets/zodiac/capricorn.PNG") };
+  // } else {
+  //   return { name: "Unknown", image: require("./../assets/img/bank/z1.jpg") };
+  // }
+
 
   const validate = (values) => {
     const errors = {};
@@ -61,7 +90,7 @@ function ZodiacSign() {
     setInitialValues({
       birth_date: "",
     })
-    setZodiacSign(null); 
+    setZodiacSign(null);
   };
   console.log(zodiacSign)
 
@@ -94,10 +123,10 @@ function ZodiacSign() {
               )}
             </div>
             <div className="col-12">
-              <button type="submit" className="btn btn-primary mr-2" style={{margin:'5px'}} disabled={isSubmitting}>
+              <button type="submit" className="btn btn-primary mr-2" style={{ margin: '5px' }} disabled={isSubmitting}>
                 {isSubmitting ? "Submitting..." : "Submit"}
               </button>
-              <button type="button" className="btn btn-secondary" style={{margin:'5px'}} onClick={handleReset}>
+              <button type="button" className="btn btn-secondary" style={{ margin: '5px' }} onClick={handleReset}>
                 Reset
               </button>
             </div>
@@ -106,9 +135,9 @@ function ZodiacSign() {
       </Formik>
       {zodiacSign && (
         <div className="row zodiac-container">
-        <div className="col-12 mt-3">
-          <h3 className="zodiac-title">Zodiac Sign: {zodiacSign.name}</h3>
-          {/* <img src={zodiacSign.image} alt={zodiacSign.name} className="zodiac-image" /> */}
+          <div className="col-12 mt-3">
+            <h3 className="zodiac-title">Zodiac Sign: {zodiacSign.name}</h3>
+            {/* <img src={zodiacSign.image} alt={zodiacSign.name} className="zodiac-image" /> */}
             <video
               autoPlay
               loop
@@ -119,8 +148,8 @@ function ZodiacSign() {
               data-aos="fade-left"
               data-aos-delay="1000"
             />
+          </div>
         </div>
-      </div>
       )}
     </>
   );
