@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "./index.css";
 
 const Testimonials = () => {
@@ -40,6 +40,23 @@ const Testimonials = () => {
         },
 
     ];
+
+    const currentTestimonialIndex = useRef(0)
+
+    const scrollTestimonial = () =>{
+        // Calculate the scroll position based on the current index
+      const scrollPosition = currentTestimonialIndex.current * 270;
+      // Scroll horizontally to the calculated position
+      document.querySelector('.testimonials-content').scrollLeft = scrollPosition;
+      // Update the index for the next scroll
+      testimonials.length === currentTestimonialIndex.current + 1 ? currentTestimonialIndex.current = 0 : currentTestimonialIndex.current += 1 ;
+    }
+
+    useEffect(() =>{
+        const scrollInterval = setInterval(scrollTestimonial,3000)
+
+        return () => clearInterval(scrollInterval)
+    },[])
 
     return (
         <section
